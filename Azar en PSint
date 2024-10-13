@@ -1,0 +1,14 @@
+Proceso Calficacion_azar
+	alunmo<-1;
+	sum<-0;
+	Escribir ("¿Cuantos alumnos tiene?");	
+	leer cantA1
+	Mientras  alumno<=cantA1 Hacer 
+		calif<-azar(10);
+		Escribir ("la calificacion ") alumno, ("es: ") calif;
+		alumno=alumno+1;
+		sum=sum+calif;
+	FinMientras
+	prom=sum/cantA1;
+	Escribir ("El promedio del grupo es  de: ") prom;
+FinProceso
