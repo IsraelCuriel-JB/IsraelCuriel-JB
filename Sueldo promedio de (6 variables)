@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+	int su1, su2, su3, su4,su5, su6, sum, div, si;
+	
+	printf("Introduzca su 1er sueldo: ");
+	scanf("%d", &su1);
+	printf("Introduzca su 2do sueldo: ");
+	scanf("%d", &su2);
+	printf("Introduzca su 3er sueldo: ");
+	scanf("%d", &su3);
+	printf("Introduzca su 4to sueldo: ");
+	scanf("%d", &su4);
+	printf("Introduzca su 5to sueldo: ");
+	scanf("%d", &su5);
+	printf("Introduzca su 6to sueldo: ");
+	scanf("%d", &su6);
+	
+	sum=su1+su2+su3+su4+su5+su6;
+	div=sum/6;
+	
+	printf("El sueldo promedio es de: %d", div);
+} 
