@@ -1,0 +1,47 @@
+Algoritmo Calculadora
+    Definir opcion, num1, num2, resultado Como Real
+	
+    Repetir
+        Escribir "Selecciona una opción:"
+        Escribir "1. Suma"
+        Escribir "2. Resta"
+        Escribir "3. Multiplicación"
+        Escribir "4. División"
+        Escribir "5. Potencia"
+        Escribir "6. Raíz cuadrada"
+        Escribir "7. Salir"
+        Leer opcion
+		
+        Si opcion >= 1 Y opcion <= 6 Entonces
+            Escribir "Ingrese el primer número:"
+            Leer num1
+            Escribir "Ingrese el segundo número:"
+            Leer num2
+			
+            Segun opcion Hacer
+                1: resultado <- num1 + num2
+                2: resultado <- num1 - num2
+                3: resultado <- num1 * num2
+                4: Si num2 = 0 Entonces
+						Escribir "No se puede dividir entre cero."
+					Sino
+						resultado <- num1 / num2
+					FinSi
+                5: resultado <- num1 ^ num2
+                6: Si num1 >= 0 Entonces
+						resultado <- Raiz(num1)
+					Sino
+						Escribir "No se puede calcular la raíz cuadrada de un número negativo."
+					FinSi
+            FinSegun
+            Escribir "El resultado es: ", resultado
+        Sino
+            Si opcion = 7 Entonces
+                Escribir "Saliendo..."
+            Sino
+                Escribir "Opción inválida. Intenta de nuevo."
+            FinSi
+        FinSi
+    Hasta Que opcion = 7
+	
+FinAlgoritmo
