@@ -1,0 +1,9 @@
+Proceso sin_titulo
+	num1<-azar(10);
+	Escribir (num1);
+	num2<-azar(10);
+	Escribir (num2);
+	sum<-num1+num2;
+	Escribir ("la suma de los numeros es: ") sum;
+	
+FinProceso
